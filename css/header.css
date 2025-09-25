@@ -1,13 +1,12 @@
-body {
-    background-color: #FBFCFD;
-    font-family: sans-serif;
-}
+
 
 .header {
+  background-color: #F7F7F8;
+  font-family: sans-serif;
     padding-inline: 16px;
     height: 150px;
     width: auto;
-    background-color: #1E3D59;
+    
     display: flex;
     flex-direction: row;
 }
@@ -40,7 +39,7 @@ body {
   margin-top: 75px;
   padding: 0;
   overflow: hidden;
-  background-color: #F0F3F3;
+  
 }
 
 .nav-list a {
