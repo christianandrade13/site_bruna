@@ -1,6 +1,33 @@
-main {
-    height: 1000px;
-    width: auto;
+body {
+    background-color: #F7F7F8;
+}
+.container {
     background-color: #F7F7F8;
     display: flex;
 }
+
+.main-content {
+    width: 100%;
+    height: max-content;
+}
+
+.sidebar {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar img {
+    width: 500px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+   
+}
+
+
+.side-content {
+    background-color: aqua;
+}
+

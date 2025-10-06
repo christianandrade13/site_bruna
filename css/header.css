@@ -1,34 +1,36 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .header {
   background-color: #F7F7F8;
-  font-family: sans-serif;
+  font-family: 'Poppins', monospace;
     padding-inline: 16px;
     height: 150px;
     width: auto;
-    
     display: flex;
     flex-direction: row;
 }
 
 /* Barra de navegação */
 .logo{
-    height: 100px;
+    
     width: auto;
-    margin: auto 0;
-    align-items: end;
-    margin-top: 20px;
+    margin:auto;
 }
 
+.logo img{
+    height: 100px;
+    width: auto;
+}
 
 .nav {
-    
+    margin: auto;
+    padding: auto;
     height: 150px;
-    width: 1280px;
-    margin-inline: auto;
+    width: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    
+  
 }
 
 
@@ -36,9 +38,8 @@
   display: flex;
   gap: 20px;
   list-style-type: none;
-  margin-top: 75px;
   padding: 0;
-  overflow: hidden;
+  
   
 }
 
@@ -48,11 +49,33 @@
   padding: 16px 20px;
   text-decoration: none;
   font-size: 20px;
+  text-align: left;
+  border-radius: 10px;
+  
 }
 
 .items a:hover {
-  float: left;
   background-color: #c4c4c4ad;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 
+/* Dropdown menu */ 
+
+
+.dropdown li{
+  display: block;
+}
+ul li ul.dropdown {
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+  background-color: #F7F7F8;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+}

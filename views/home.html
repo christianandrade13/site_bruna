@@ -5,21 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/mainPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" type="image/x-icon" href="/imgs/favicon.png">
     <script defer src="/javascript/app.js"></script>
     <title>Bruna Lucas</title>
     
 </head>
+<body>
      <header class="header">
         <nav class="nav">
                 <a href="/views/home.html" class="logo"><img class="logo" src="/imgs/Logo_cortado.png" alt="Logo do site"></a>
                 
                 <ul class="nav-list">
-                        <li class="items"><a href="/views/home.html">Home</a></li>
-                        <li class="items"><a href="#">Sobre mim</a></li>
-                        <li class="items"><a href="#">Abordagens terapêuticas</a></li>
-                        <li class="items"><a href="">Contato</a></li>
-                </ul>
+    <li class="items"><a href="/views/home.html">Home</a></li>
+    <li class="items"><a href="#">Sobre mim</a></li>
+    <li class="items"><a href="#">Abordagens terapêuticas</a>
+        <ul class="dropdown">
+            <li ><a href="/views/abordagensTerapêuticas.html">Abordagens terapêuticas</a></li>
+            <li ><a href="/views/terapiaCognitivoComportamental.html">Terapia Cognitivo Comportamental</a></li>
+            <li ><a href="/views/terapiaFocadaEmSolucoes.html">Terapia Focada em Soluções</a></li>
+        </ul>
+    </li>
+    <li class="items"><a href="">Contato</a></li>
+</ul>
         </nav>
     </header>
+
+    <main class="container">
+        <div class="main-content">
+            
+            <div class="sidebar">
+                <img  src="/imgs/Bench.png" alt="Foto da Bruna Lucas">
+                    <div class="side-content">
+                        teste
+                    </div>
+            </div>
+           
+        </div>
+        
+
+
+    </main>
+
+
+
+
+</body>
+
 </html>
