@@ -1,0 +1,174 @@
+a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: inherit; /* Faz os links herdarem a cor do texto do contêiner pai */
+}
+
+/* 1. Estilos do Rodapé Principal */
+.footer {
+    background-color: #F7F7F8; /* Cor de fundo cinza claro, como na imagem */
+    padding: 20px 5%; /* Espaçamento interno (vertical e horizontal) */
+    color: #444; /* Cor do texto geral */
+    font-size: 14px;
+    margin-top: 300px;
+    align-items: center;
+    align-items: center;
+}
+
+
+.footer1 {
+    /* Cor de fundo cinza claro, como na imagem */
+    padding: 20px 5%; /* Espaçamento interno (vertical e horizontal) */
+    color: #444; /* Cor do texto geral */
+    font-size: 14px;
+    margin-top: 200px;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* 2. Estilos da Seção Superior (Logo e Navegação) */
+.footer-top {
+    display: flex; /* Habilita o Flexbox */
+    justify-content: space-between; /* Alinha o logo para a esquerda e a navegação para a direita */
+    align-items: center; /* Centraliza verticalmente */
+    
+}
+
+/* Estilo do Logo/Texto Principal */
+.footer-logo {
+    font-size: 1.5em; /* Tamanho maior para o logo */
+    font-weight: bold;
+}
+
+.logo-text {
+    /* Estilo para imitar a fonte manuscrita, use a fonte real do projeto se tiver. */
+    /* A cor #60a5a8 é um verde-água, semelhante ao da imagem */
+    color: #333; 
+}
+
+
+/* Estilos da Navegação */
+.footer-nav a {
+    margin-left: 25px; /* Espaçamento entre os links de navegação */
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #000; /* Um leve efeito hover para feedback */
+}
+
+/* 3. Estilo da Linha Divisória */
+.footer-divider {
+    border: 0;
+    height: 1px; /* Espessura da linha */
+    background-color: #d1d1d1; /* Cor da linha */
+    margin: 15px 0;
+}
+
+/* 4. Estilos da Seção Inferior (Direitos Autorais e Redes Sociais) */
+.footer-bottom {
+    display: flex; /* Habilita o Flexbox */
+    justify-content: space-between; /* Alinha os direitos autorais para a esquerda e links sociais para a direita */
+    align-items: center; /* Centraliza verticalmente */
+    padding-top: 5px;
+}
+
+/* Estilo dos Links de Redes Sociais */
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Espaçamento e tamanho dos ícones */
+.social-links a {
+    font-size: 18px; /* Tamanho dos ícones */
+    margin-right: 15px; /* Espaçamento entre ícones */
+}
+
+/* Estilo do link de Política de Privacidade */
+.privacy-policy {
+    font-size: 14px;
+    margin-left: 5px; /* Adiciona um pequeno espaço do último ícone */
+}
+
+
+/* 5. Estilos de Responsividade (para telas menores) */
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 20px 5%;
+    }
+    
+    .footer-top {
+        flex-direction: column; /* Empilha o logo e a navegação verticalmente */
+        text-align: center;
+    }
+
+    .footer-nav {
+        margin-top: 15px;
+    }
+
+    .footer-nav a {
+        margin: 0 10px; /* Reduz o espaçamento entre os links */
+        display: block; /* Faz cada link ocupar a própria linha (opcional) */
+        padding: 5px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column; /* Empilha as informações de direitos e links sociais */
+        text-align: center;
+    }
+
+    .copyright-info {
+        margin-bottom: 10px; /* Espaço entre a info de copyright e os links sociais */
+    }
+
+    .social-links {
+        margin-top: 10px;
+        /* Centraliza os links sociais se a largura for ajustada */
+        justify-content: center; 
+        width: 100%;
+    }
+
+    .social-links a:last-child {
+        margin-right: 0; /* Remove a margem extra no último ícone */
+    }
+}
+
+
+/* Redes Sociais */
+.redes-sociais {
+    margin-bottom: 20px;
+    
+}
+.redes-sociais img { 
+    height: 24px; 
+    margin-right: 8px; 
+    vertical-align: middle; 
+}
+
+.redes-sociais a {
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 24px; 
+    margin: 0 10px;
+    transition: color 0.3s ease; 
+    display: inline-block; 
+}
+
+
+.redes-sociais a:hover {
+    color: #007bff;
+    transform: scale(1.1); 
+}
+
+.rodape-copy {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-top: 15px;
+}
+
+
+

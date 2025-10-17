@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
+
 .header {
-  background-color: #F7F7F8;
-  font-family: 'Poppins', monospace;
-    padding-inline: 16px;
+    background-color: #F7F7F8;
+    font-family: 'Poppins', monospace;
     height: 150px;
-    width: auto;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
 }
 
-/* Barra de navegação */
+/* Barra de navegação  #F7F7F8*/
 .logo{
-    
     width: auto;
     margin:auto;
 }
@@ -23,27 +23,28 @@
 }
 
 .nav {
-    margin: auto;
-    padding: auto;
+    background-color: #F7F7F8;
+    margin-left: auto;
+    margin-right: auto;
     height: 150px;
-    width: auto;
+    width: 1400px;
     display: flex;
     align-items: center;
-    
-  
 }
 
 
 .nav-list{
   display: flex;
-  gap: 20px;
   list-style-type: none;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+
   
   
 }
 
-.nav-list a {
+.nav-list .items a {
   display: block;
   color: rgba(0, 0, 0, 0.671);
   padding: 16px 20px;
@@ -54,10 +55,29 @@
   
 }
 
+/* botão contato */ 
+.button {
+  color: #ffff;
+  background-color: #1A494E;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+.button:hover {
+  background-color: #2b737a;
+}
+
+
 .items a:hover {
   background-color: #c4c4c4ad;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+
 
 
 /* Dropdown menu */ 

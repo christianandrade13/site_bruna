@@ -1,0 +1,11 @@
+<footer class="rodape">
+        <div class="rodape-conteudo">
+            <p class="rodape-titulo">Siga-nos nas Redes Sociais</p>
+            <div class="redes-sociais">
+                <a href="https://www.instagram.com/psi.brunalucas" target="_blank"><img src="/imgs/icons/instagram.svg" alt="Instagram" ></a>
+                 <a href="https://www.linkedin.com/in/brunalucas" target="_blank"><img src="/imgs/icons/linkedin.svg" alt="LinkedIn" ></a>
+                 <a href="https://www.tiktok.com/@psi.brunalucas?_t=ZM-90Nv8t3rpU0&_r=1" target="_blank"><img src="/imgs/icons/tiktok.svg" alt="tiktok" ></a>
+                 <a href="https://w.app/psi_brunalucas" target="_blank"><img src="/imgs/icons/whatsapp.svg" alt="whatsapp" ></a>
+                
+            <p class="rodape-copy">&copy; 2025 Bruna Lucas.(CRP: 06/224668) Todos os direitos reservados.</p>
+            <p cl
