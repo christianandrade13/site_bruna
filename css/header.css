@@ -3,7 +3,7 @@
 
 
 .header {
-    background-color: #F7F7F8;
+    background-color: #f7f8f8;
     font-family: 'Poppins', monospace;
     height: 150px;
     margin-bottom: 10px;
@@ -23,11 +23,11 @@
 }
 
 .nav {
-    background-color: #F7F7F8;
+    background-color: #2155a3;
     margin-left: auto;
     margin-right: auto;
     height: 150px;
-    width: 1400px;
+    width: 1800px;
     display: flex;
     align-items: center;
 }

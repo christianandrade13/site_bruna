@@ -44,6 +44,21 @@ a {
     
 }
 
+.footerTE { /* utilizado nas telas sobre, Terapia do Esquema e Terapia Cognitiva e empresas*/
+    /* Cor de fundo cinza claro, como na imagem */
+    padding: 20px 5%; /* Espaçamento interno (vertical e horizontal) */
+    color: #444; /* Cor do texto geral */
+    font-size: 14px;
+    margin-top: 600px;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
 .footerAbout {
     /* Cor de fundo cinza claro, como na imagem */
     padding: 20px 5%; /* Espaçamento interno (vertical e horizontal) */
