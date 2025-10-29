@@ -5,7 +5,7 @@ a {
 
 /* 1. Estilos do Rodapé Principal */
 .footer {
-    background-color: #0707df; /* Cor de fundo cinza claro, como na imagem */
+    /* Cor de fundo cinza claro, como na imagem */
     padding: 20px 5%; /* Espaçamento interno (vertical e horizontal) */
     color: #444; /* Cor do texto geral */
     font-size: 14px;
@@ -20,9 +20,8 @@ a {
     padding: 20px 5%; /* Espaçamento interno (vertical e horizontal) */
     color: #444; /* Cor do texto geral */
     font-size: 14px;
-    margin-top: 200px;
-    width: 1400px;
-    
+    margin-top: 250px;
+    width: 1300px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -35,8 +34,8 @@ a {
     padding: 20px 5%; /* Espaçamento interno (vertical e horizontal) */
     color: #444; /* Cor do texto geral */
     font-size: 14px;
-    margin-top: 300px;
-    width: 1400px;
+    margin-top: 1550px;
+    width: 1300px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -50,7 +49,7 @@ a {
     color: #444; /* Cor do texto geral */
     font-size: 14px;
     margin-top: 600px;
-    width: 1400px;
+    width: 1300px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -64,7 +63,21 @@ a {
     padding: 20px 5%; /* Espaçamento interno (vertical e horizontal) */
     color: #444; /* Cor do texto geral */
     font-size: 14px;
-    margin-top: 200px;
+    margin-top: 500px;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+.footerCompany {
+    /* Cor de fundo cinza claro, como na imagem */
+    padding: 20px 5%; /* Espaçamento interno (vertical e horizontal) */
+    color: #444; /* Cor do texto geral */
+    font-size: 14px;
+    margin-top: 1300px;
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -72,6 +85,32 @@ a {
     text-align: center;
 }
 
+
+.footerBlog {
+    /* Cor de fundo cinza claro, como na imagem */
+    padding: 20px 5%; /* Espaçamento interno (vertical e horizontal) */
+    color: #444; /* Cor do texto geral */
+    font-size: 14px;
+    margin-top: 1900px;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.footerPrivacy {
+    /* Cor de fundo cinza claro, como na imagem */
+    padding: 20px 5%; /* Espaçamento interno (vertical e horizontal) */
+    color: #444; /* Cor do texto geral */
+    font-size: 14px;
+    margin-top: 1000px;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+}
 
 
 /* 2. Estilos da Seção Superior (Logo e Navegação) */

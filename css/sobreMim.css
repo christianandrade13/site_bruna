@@ -16,7 +16,7 @@ body {
 }
 .main-content {
     
-    width: 100vw;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -27,7 +27,9 @@ body {
 .sidebar {
     margin-left: auto;
     margin-right: auto;
-    width: 1150px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +38,7 @@ body {
 
 .sidebar-image {
     width: 400px;
-    margin-right: 150px;
+    margin-right: 100px;
     height: auto;
     border-radius: 10px;
     justify-content: center;
@@ -46,10 +48,11 @@ body {
 
 .content {
     
-    padding: 20px;
-    width: 500px;
+    width: 100%;            /* ocupa 100% da .sidebar sem ultrapassar */
+    max-width: 100%;
     height: 610px;
     display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -91,8 +94,9 @@ hr {
 display: flex;
 margin-left: auto;
 margin-right: auto;
-width: 1150px;
-height: 1000px;
+width: 100%;
+max-width: 1150px;
+height: auto;
 flex-direction: column;
 align-content: center;
 align-items: center;

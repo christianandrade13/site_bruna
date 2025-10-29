@@ -16,7 +16,7 @@ body {
 }
 .main-content {
     
-    width: 100vw;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -27,8 +27,8 @@ body {
 .sidebar {
     margin-left: auto;
     margin-right: auto;
-    width: 1150px;
-    
+    max-width: 1150px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,21 +37,25 @@ body {
 
 .sidebar-image {
     width: 400px;
-    margin-right: 150px;
+    margin-right: 100px;
     height: auto;
     border-radius: 10px;
     justify-content: center;
     box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+    max-width:100%;
+    margin-top: 100px;
 }
 
 
 .content {
     
     padding: 20px;
-    width: 500px;
-    height: 610px;
+    width: 100%;            /* ocupa 100% da .sidebar sem ultrapassar */
+    max-width: 100%; 
+    height: auto;
     display: flex;
-    
+    flex-wrap: wrap;
+    height:auto!important;
 }
 
 
@@ -60,9 +64,12 @@ body {
     
     font-size: 20px;
     color: rgba(0, 0, 0, 0.671);
-    line-height: 1.6;
+    line-height: 1.7;
+    padding-left:16px;
+    padding-right:16px;
     
 }
+
 
 .text-content h2 {
     font-size: 40px;
@@ -88,18 +95,19 @@ hr {
 
 
 .funcionamento  {
-margin-top: 60
-
-px;
+margin-top: 60px;
 display: flex;
 margin-left: auto;
 margin-right: auto;
-width: 1150px;
-height: 1000px;
+width: 100%;
+max-width: 1150px; 
+height: auto;
 flex-direction: column;
 align-content: center;
 align-items: center;
 color: rgba(0, 0, 0, 0.671);
+padding-left:16px;
+padding-right:16px;
   
 }
 
@@ -120,18 +128,53 @@ border-radius: 10px;
     align-items: center;
     text-align: center;
     width: 1150px;
-    height: 400px;
+    height: auto;
     margin-top: 200px;
-    border-radius: 10px;
-    
+    max-width:1150px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:16px;
+    padding-right:16px;
+    height:auto!important;
+       
 }
+
+.depoimento h1{
+    font-size: 40px;
+    color: #1A494E;
+}
+
 
 .carrosel{
     display: none;
     margin-top: 40px;
     
+    
 }
 
-.depoimento h1{
-    font-size: 40px;
+.carrosel_container{
+    
+    height: 300px;
+    align-content: center;
 }
+
+.carroselText{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.initials {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+    color: #1A494E;
+}
+
+
+img,video{max-width:100%;height:auto;display:block}
+
+
+
+
+
+

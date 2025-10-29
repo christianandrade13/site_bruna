@@ -18,7 +18,7 @@ body {
 }
 .main-content {
     
-    width: 100vw;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -29,33 +29,32 @@ body {
 .sidebar {
     margin-left: auto;
     margin-right: auto;
-    width: 1150px;
-    
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     
 }  
 
-.sidebar-image {
-    width: 400px;
-    margin-right: 150px;
-    height: auto;
-    border-radius: 10px;
-    justify-content: center;
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
-}
-
 
 .content {
     
     padding: 20px;
-    width: 500px;
+    width: 100%;
+    max-width: 100%;
     height: 610px;
     display: flex;
+    flex-wrap: wrap;
     
 }
 
+.title {
+    display: inline;
+    font-size: 40px;
+    font-weight: bold;
+}
 
 
 .text-content {
@@ -76,9 +75,6 @@ body {
     margin-bottom: 20px;
 }
 
-.title {
-    display: inline;
-}
 
 hr {
     border: 0;
@@ -88,19 +84,21 @@ hr {
     margin-bottom: 20px;
 }
 
-
 .funcionamento  {
 
 display: flex;
 margin-left: auto;
 margin-right: auto;
-width: 1150px;
-height: 1000px;
+width: 100%;
+max-width: 100%;
+height: auto;
 flex-direction: column;
 align-content: center;
 align-items: center;
   
 }
+
+
 
 .contato{
 padding: 1px;
@@ -111,15 +109,6 @@ background-color: #F7F7F8;
 }
 
 
-.footerTCC {
-    /* Cor de fundo cinza claro, como na imagem */
-    padding: 20px 5%; /* Espaçamento interno (vertical e horizontal) */
-    color: #444; /* Cor do texto geral */
-    font-size: 14px;
-    margin-top: 200px;
-    width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    text-align: center;
+ol {
+    list-style: decimal inside;
 }

@@ -1,6 +1,6 @@
-//carrosel
+
 var carroselIndex = 0;
-carousel();
+var carroselTimer; // variável para armazenar o temporizador
 
 function carousel() {
   var i;
@@ -10,7 +10,31 @@ function carousel() {
   }
   carroselIndex++;
   if (carroselIndex > x.length) {carroselIndex = 1} 
-  x[carroselIndex-1].style.display = "block"; 
-  setTimeout(carousel, 10000); 
+  x[carroselIndex - 1].style.display = "block"; 
+
+  // reinicia o timer
+  carroselTimer = setTimeout(carousel, 5000);
 }
+
+// função para iniciar o carrossel
+function startCarousel() {
+  carousel();
+}
+
+// função para pausar o carrossel
+function pauseCarousel() {
+  clearTimeout(carroselTimer);
+}
+
+// inicia o carrossel assim que a página carrega
+window.onload = function() {
+  startCarousel();
+
+  // adiciona os eventos de pausa e retomada
+  var container = document.querySelector(".carrosel_container");
+  container.addEventListener("mouseenter", pauseCarousel);
+  container.addEventListener("mouseleave", startCarousel);
+};
+
+
 
