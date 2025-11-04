@@ -117,6 +117,13 @@ align-items: first baseline;
     list-style: decimal inside;
 }
 
+.listPerguntas li {
+    font-weight: bold;
+}
+
+.listPerguntas p{
+    font-weight: lighter;
+}
 @media  screen and (max-width: 900px) {
     .sidebar {
         flex-direction: column;
