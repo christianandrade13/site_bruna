@@ -20,7 +20,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+   
     
 }
 
@@ -53,6 +53,7 @@ body {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
+    height: 1200px;
     
 }
 
@@ -78,6 +79,8 @@ body {
 
 .title {
     display: inline;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 hr {
@@ -112,4 +115,41 @@ align-items: first baseline;
 
 .listPerguntas {
     list-style: decimal inside;
+}
+
+@media  screen and (max-width: 900px) {
+    .sidebar {
+        flex-direction: column;
+        
+    }
+
+    .sidebar-image {
+        width: 80%;
+        margin: 0 0 20px 0;
+    }
+
+    .content {
+        height: auto;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .text-content {
+        font-size: 18px;
+        text-rendering: optimizeLegibility;
+    }
+    .main{
+        margin-bottom: 50px;
+    }
+
+     .title {
+        font-size: 30px;
+        
+    }
+
+    .listPerguntas{
+        font-size: 18px;
+         text-align: justify;
+    }
+    
 }

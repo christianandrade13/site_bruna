@@ -38,3 +38,18 @@ window.onload = function() {
 
 
 
+//Botão menu
+
+const naveMobile = document.getElementById('Menu')
+const btn = document.getElementById('btn-menu')
+
+naveMobile.addEventListener('click', animacao)
+
+function animacao() {
+  
+  btn.classList.toggle('ativar')
+  naveMobile.classList.toggle('abrir')
+
+}
+
+

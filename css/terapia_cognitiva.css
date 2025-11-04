@@ -14,10 +14,12 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
+
+
     
 }
 .main-content {
-    
+    margin-top: 30px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -44,7 +46,7 @@ body {
     padding: 20px;
     width: 100%;
     max-width: 100%;
-    height: 610px;
+    height: 1900px;
     display: flex;
     flex-wrap: wrap;
     
@@ -52,7 +54,7 @@ body {
 
 .title {
     display: inline;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -111,4 +113,34 @@ background-color: #F7F7F8;
 
 ol {
     list-style: decimal inside;
+}
+
+@media  screen and (max-width: 900px) {
+    .sidebar {
+        flex-direction: column;
+        
+    }
+
+    .sidebar-image {
+        width: 80%;
+        margin: 0 0 20px 0;
+    }
+
+    .content {
+        height: auto;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .text-content {
+        font-size: 18px;
+        text-rendering: optimizeLegibility;
+    }
+    .main{
+        margin-bottom: 50px;
+    }
+    
+    .title {
+        font-size: 30px;
+    }
 }

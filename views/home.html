@@ -18,9 +18,8 @@
      <header class="header">
         <nav class="nav">
                 <a class="logo" href="/views/home.html" ><img class="logo" src="/imgs/icons/Logo_cortado.png" alt="Logo do site"></a>
-                
                 <ul class="nav-list">
-    <button type="submit" class="button"><a class="button" href="https://wa.me/message/KAI3R2U7MTONI1" target="_blank">Entrar em contato</a></button>
+    <div class="contato"><button type="submit" class="button"><a href="https://wa.me/message/KAI3R2U7MTONI1" target="_blank">Entrar em contato</a></button></div>
     <li class="items"><a href="/views/sobreMim.html">Sobre Mim</a></li>
     <li class="items"><a href="#">Abordagens Terapêuticas</a>
         <ul class="dropdown">
@@ -31,10 +30,27 @@
     <li class="items"><a href="/views/Empresas.html">Para Empresas</a></li>
     <li class="items"><a href="/views/#">Blog</a></li>
     <li class="items"><a href="/views/PerguntasFrequentes.html">Perguntas Frequentes</a></li>
-    
-
 </ul>
+
+<button id="btn-menu" onclick="animacao()">
+    <span class="linha"></span>
+    <span class="linha"></span>
+    <span class="linha"></span>
+</button>
+<div class="nav-mobile" id="Menu">
+    <ul class="nav-list-mobile">
+    <li class="items-mobile"><a href="/views/sobreMim.html">Sobre Mim</a></li>
+    <li class="items-mobile"><a href="/views/TerapiaDoEsquema.html" >Terapia do Esquema</a></li>
+    <li class="items-mobile"><a href="/views/TerapiaCognitiva.html">Terapia Cognitivo Comportamental</a></li>
+    <li class="items-mobile"><a href="/views/Empresas.html">Para Empresas</a></li>
+    <li class="items-mobile"><a href="/views/Blog.html">Blog</a></li>
+    <li class="items-mobile"><a href="/views/PerguntasFrequentes.html">Perguntas Frequentes</a></li>
+</ul>
+</div>
+
         </nav>
+        <!-- menu mobile. -->
+         
     </header>
 
     <main class="main">
@@ -45,6 +61,7 @@
                         <div class="text-content">
                             <div class="title">Terapeuta Online
                                 <hr>
+                               
                             </div>
                             <p><h2>Bruna Lucas, psicóloga clínica</h2></p>
                             <p>Bem-vindo(a)!<br><br> 
@@ -55,12 +72,25 @@
                         </div>
                     </div>
             </div>
+
+            
+
         </div>
         <div class="funcionamento">
             
             <div class="funcionamento-content">
                 <div class="funcionamento-text">
                     <h2>Como funciona</h2>
+                </div>
+                <div class="funcionamento-mobile">
+                    <ol class="lista-mobile">
+                        <li>Primeiro contato</li>
+                        <br><p> Entre em contato no WhatsApp para conversarmos e esclarecer dúvidas.</p><br>
+                        <li>Agendamento de Sessão</li>
+                        <br><p>Após isso, iremos agendar um horario para darmos inicio nas sessões de psicoterapia online.</p><br>
+                        <li>Plano Personalizado</li>
+                        <br><p>O plano terapeutico é personalizado e totalmente alinhado aos seus objetivos e necessidades</p><br>
+                    </ol>
                 </div>
                 <img class="funcionamento-image" src="/imgs/funcionamento.png" alt="Ícone de funcionamento">
             </div>
@@ -85,7 +115,7 @@
                 </div>
                 
                 </div>
-               
+            </div>
         </div>
     </main>
 <footer>

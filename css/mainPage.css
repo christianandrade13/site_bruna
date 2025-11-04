@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 150px
 }
 .main-content {
     
@@ -37,13 +38,15 @@ body {
 
 .sidebar-image {
     width: 400px;
-    margin-right: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
     height: auto;
     border-radius: 10px;
     justify-content: center;
     box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
     max-width:100%;
     margin-top: 100px;
+    
 }
 
 
@@ -82,7 +85,8 @@ body {
 }
 
 .title {
-    display: inline;
+    font-size: 25px;
+    
 }
 
 hr {
@@ -114,6 +118,7 @@ padding-right:16px;
 .funcionamento-image {
 margin-top: 150px;
 border-radius: 10px;
+
 }
 
 .funcionamento-text {
@@ -124,44 +129,65 @@ border-radius: 10px;
 }
 
 .depoimento {
+  
+    max-width: 1150px; /* Largura máxima */
+    width: 100%;       /* Largura fluida */
     
-    align-items: center;
-    text-align: center;
-    width: 1150px;
-    height: auto;
+    height: auto; /* Deixa a altura se ajustar ao conteúdo */
     margin-top: 200px;
-    max-width:1150px;
-    margin-left:auto;
-    margin-right:auto;
-    padding-left:16px;
-    padding-right:16px;
-    height:auto!important;
-       
+    margin-left: auto;   /* Centraliza o container na tela */
+    margin-right: auto;  /* Centraliza o container na tela */
+    
+    /* Adiciona 'box-sizing' para o padding não somar à largura total */
+    box-sizing: border-box; 
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    /* 'align-items' não funciona aqui, pois o .depoimento não é um container flex */
 }
 
-.depoimento h1{
+.depoimento h1 {
     font-size: 40px;
     color: #1A494E;
 }
 
+.carrosel_container {
+    /* * TROCAMOS 'height: 300px' por 'height: auto'.
+     * Em telas pequenas, o texto terá mais linhas.
+     * 'height: auto' permite que o container cresça o necessário.
+    */
+    height: auto; 
+    height: 400px; /* Define uma altura mínima para manter um espaço */
+    
+    /* Adiciona display flex para centralizar o carrossel ativo verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
 
-.carrosel{
-    display: none;
+.carrosel {
+    display: none; 
     margin-top: 40px;
-    
-    
+   
 }
 
-.carrosel_container{
-    
-    height: 300px;
-    align-content: center;
-}
-
-.carroselText{
+.carroselText {
     font-size: 15px;
     font-weight: bold;
+    line-height: 1.6; /* Melhora a legibilidade */
 }
+
+/* * Dica: Em vez de usar <br> entre os parágrafos,
+ * dê uma margem para o próprio <p>. Fica mais limpo.
+*/
+.carroselText + .carroselText {
+    margin-top: 20px;
+}
+
 
 .initials {
     font-size: 30px;
@@ -171,10 +197,212 @@ border-radius: 10px;
 }
 
 
-img,video{max-width:100%;height:auto;display:block}
+.funcionamento-mobile {
+    display: none;
+    
+}
+
+.funcionamento-mobile p {
+    color: rgba(0, 0, 0, 0.671);
+}
 
 
 
 
+
+/* main page responsivo*/
+
+@media screen and (max-width:768px) {
+    
+       .sidebar {
+        flex-direction: column-reverse;
+        margin-right: 50px;
+        
+    }
+
+    .sidebar-image {
+        margin-left: auto;
+        margin-right: auto;
+        width:300px ;
+        height: calc(100% - 200px);    
+    }
+    
+    
+    .title{
+        text-align: center;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .funcionamento {
+        margin-top: 10px;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+
+    .funcionamento-content{
+        flex-direction: column
+    }
+   
+    .funcionamento-text{
+        margin-right: 25px;
+        font-size: 40px;
+    }
+    .funcionamento-image {
+       display: none;
+    }
+
+    .funcionamento-mobile{
+        text-align: center;
+        margin-top: 30px;
+        display: block;
+    }
+
+    .lista-mobile{
+        list-style: decimal inside;
+        margin-right: 35px;
+        font-size: 20px;
+    }
+
+    .lista-mobile li {
+     font-size: 30px;
+    }
+
+    
+    .depoimento {
+        /* Reduz a margem superior em telas pequenas */
+        margin-top: 60px; 
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .depoimento h1 {
+        /* Reduz o tamanho do título em telas pequenas */
+        font-size: 32px; 
+        text-align: center;
+        margin-right: 35px;
+    }
+
+    .carroselText {
+        /* Ajusta o tamanho da fonte para melhor leitura no mobile */
+        font-size: 20px;
+        font-weight: normal; /* Textos muito em negrito podem cansar no mobile */
+    }
+
+    .initials {
+        font-size: 24px;
+    }
+    
+    .carrosel_container {
+        margin-right: 35px;
+        margin-top: 40px;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        
+    }
+    
+}
+
+
+@media screen and (max-width:1100px) {
+    .sidebar {
+        margin-left: 50px;
+
+    }
+
+    .sidebar-image {
+        margin-left: auto;
+        margin-right: auto;
+        width:300px ;
+        height: calc(100% - 200px);    
+    }
+    
+    
+    .title{
+        text-align: center;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .funcionamento {
+        margin-top: 10px;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+
+    .funcionamento-content{
+        flex-direction: column
+    }
+   
+    .funcionamento-text{
+        margin-right: 25px;
+        font-size: 40px;
+    }
+    .funcionamento-image {
+       display: none;
+    }
+
+    .funcionamento-mobile{
+        text-align: center;
+        margin-top: 30px;
+        display: block;
+    }
+
+    .lista-mobile{
+        list-style: decimal inside;
+        margin-right: 35px;
+        font-size: 20px;
+    }
+
+    .lista-mobile li {
+     font-size: 30px;
+    }
+
+    
+    .depoimento {
+        /* Reduz a margem superior em telas pequenas */
+        margin-top: 60px; 
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .depoimento h1 {
+        /* Reduz o tamanho do título em telas pequenas */
+        font-size: 32px; 
+        text-align: center;
+        margin-right: 35px;
+    }
+
+    .carroselText {
+        /* Ajusta o tamanho da fonte para melhor leitura no mobile */
+        font-size: 20px;
+        font-weight: normal; /* Textos muito em negrito podem cansar no mobile */
+    }
+
+    .initials {
+        font-size: 24px;
+    }
+    
+    .carrosel_container {
+        margin-right: 35px;
+        margin-top: 40px;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        
+    }
+    
+}
 
 

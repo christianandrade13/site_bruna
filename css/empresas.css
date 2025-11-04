@@ -15,9 +15,10 @@ body {
     justify-content: center;
     height: 100%;
     
+    
 }
 .main-content {
-    
+    margin-top: 50px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -53,9 +54,10 @@ body {
     padding: 20px;
     width: 100%;
     max-width: 100%;
-    height: 610px;
+    height: 1800px;
     display: flex;
-    flex-wrap: wrap;
+    text-align: justify;
+    
     
 }
 
@@ -134,3 +136,34 @@ background-color: #F7F7F8;
  
 }
 
+
+@media  screen and (max-width: 900px) {
+    .sidebar {
+        flex-direction: column-reverse;
+        
+    }
+
+    .sidebar-image {
+        width: 80%;
+        margin: 0 0 20px 0;
+    }
+
+    .content {
+        height: auto;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .text-content {
+        font-size: 18px;
+        text-rendering: optimizeLegibility;
+    }
+    .main{
+        margin-bottom: 50px;
+    }
+
+     .title {
+        font-size: 30px;
+    }
+    
+}
