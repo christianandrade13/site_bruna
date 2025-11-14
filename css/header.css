@@ -203,7 +203,7 @@ NAV mobile
     
   }
   .logo img{
-    margin-left: 50px;
+    margin-left: 40px;
   }
 
   .nav-mobile.abrir{
@@ -224,11 +224,7 @@ NAV mobile
   .nav-list{
     display: none;
   }
-  .logo {
-    width: 100%;
-  }
-
- 
+  
 
   .nav-mobile.abrir{
     visibility: visible;
