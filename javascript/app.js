@@ -13,7 +13,7 @@ function carousel() {
   x[carroselIndex - 1].style.display = "block"; 
 
   // reinicia o timer
-  carroselTimer = setTimeout(carousel, 5000);
+  carroselTimer = setTimeout(carousel, 8000);
 }
 
 // função para iniciar o carrossel

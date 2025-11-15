@@ -68,7 +68,7 @@ body {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.671);
     line-height: 1.6;
-    
+   
 }
 
 .text-content h2 {
@@ -157,6 +157,7 @@ background-color: #F7F7F8;
     .text-content {
         font-size: 18px;
         text-rendering: optimizeLegibility;
+        text-align: left;
     }
     .main{
         margin-bottom: 50px;

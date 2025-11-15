@@ -153,9 +153,10 @@ background-color: #F7F7F8;
         text-align: justify;
     }
 
-    .text-content {
+     .text-content {
         font-size: 18px;
         text-rendering: optimizeLegibility;
+        text-align: left;
     }
     .main{
         margin-bottom: 50px;

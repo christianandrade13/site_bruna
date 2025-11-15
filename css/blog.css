@@ -26,6 +26,13 @@ body {
     justify-content: center;
 }
 
+address {
+    font-style: normal;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 18px;}
+    
 .sidebar {
     margin-left: auto;
     margin-right: auto;
@@ -66,7 +73,7 @@ body {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.671);
     line-height: 1.6;
-    
+    text-align: left;
 }
 
 .text-content h2 {
@@ -160,9 +167,10 @@ background-color: #F7F7F8;
         text-align: justify;
     }
 
-    .text-content {
+     .text-content {
         font-size: 18px;
         text-rendering: optimizeLegibility;
+        text-align: left;
     }
     .main{
         margin-bottom: 50px;

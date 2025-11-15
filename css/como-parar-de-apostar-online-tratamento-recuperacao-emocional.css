@@ -14,7 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-    margin-bottom: 7300px;
+    margin-bottom: 7500px;
     
 }
 .main-content {
@@ -57,18 +57,27 @@ body {
     max-width: 100%;
     height: 2500px;
     display: flex;
-    text-align: justify;
     
 }
 
-
+address {
+    font-style: normal;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 18px;}
 
 .text-content {
     
     font-size: 20px;
     color: rgba(0, 0, 0, 0.671);
     line-height: 1.6;
+    text-align: left;
     
+}
+.text-content span {
+    font-weight: bold;
+    color: #1A494E;
 }
 
 .text-content h2 {
