@@ -132,7 +132,32 @@ background-color: #F7F7F8;
     }
 
      .text-content {
-        font-size: 18px;
+        font-size: 20px;
+        text-rendering: optimizeLegibility;
+        text-align: left;
+    }
+    
+}
+
+@media  screen and (max-width: 1150px) {
+    .sidebar {
+        flex-direction: column-reverse;
+        
+    }
+
+    .sidebar-image {
+        width: 50%;
+        margin: 0 0 20px 0;
+    }
+
+    .content {
+        height: auto;
+        width: 90%;
+        text-align: justify;
+    }
+
+     .text-content {
+        font-size: 20px;
         text-rendering: optimizeLegibility;
         text-align: left;
     }
