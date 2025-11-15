@@ -168,7 +168,7 @@ background-color: #F7F7F8;
     justify-content: center;
     align-items: center;
     width: 100%;
-     margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -209,10 +209,15 @@ background-color: #F7F7F8;
     .title {
         font-size: 30px;
     }
-
+    .terapia {
+        margin-right: 0;       /* tira aquele +100px */
+        width: 100%;           /* garante que fique dentro do container */
+        max-width: 100%;       /* evita ultrapassar a tela */
+    }
 
     .img-container {
         display: block;
+        margin-right: 0px;
     }
     .caption{
         margin-right: 0px;

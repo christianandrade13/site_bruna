@@ -213,4 +213,9 @@ background-color: #F7F7F8;
     .caption{
         margin-right: 0px;
     }
+     .terapia {
+        margin-right: 0;       /* tira aquele +100px */
+        width: 100%;           /* garante que fique dentro do container */
+        max-width: 100%;       /* evita ultrapassar a tela */
+    }
 }
